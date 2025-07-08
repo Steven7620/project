@@ -1,32 +1,81 @@
-<body bgcolor="yellow">
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Directors Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<table align="center" border="" height="100%" width="100%"  >
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <tr bgcolor="orange">
-    <th >DIRECTOR'S</th>
-    <th>DESCRIPTION</th>
-    </tr>
-    
-    <tr bgcolor="skyblue" >
-    <td ><img src="images/director1.jpg" alt="" height="100px" width="100px" > <br>MANAGING DIRECTOR</td>
-    <td align="top">Hello,I am Steven Udandi The Managing Director Of  Steven Cycle Traders,I am (bscIT)
-        Graduate from Mumbai university,I Have worked in Various Companies and  have an experience of 10+years in the industry,I  joined my family buisness in 2023 and it has grown since then,I have various Branch of my company..etc 
-           </td>
-    <tr>
-    
-    
-    <tr bgcolor="violet">
-    <td><img src="images/director2.jpg" alt="" height="100px" width="100px"> <br>TECHNICAL DIRECTOR</td>
-    <td>Hello,I am Vikas k. The Technical Director Of  Steven Cycle Traders,I am (bscIT)
-        Graduate,I Have worked in Various Companies and  have an experience of 7+years in the industry.etc 
-           </td>
-    <tr>
-    
-    <tr bgcolor="salmon" >
-    <td><img src="images/director3.jpg" alt="" height="100px" width="100px"> <br>FINANCE DIRECTOR</td>
-    <td>Hello,I am Manish p. The Finance Director Of  Steven Cycle Traders,I am (bsc(CS))
-        Graduate,I Have worked in Various Companies and  have an experience of 5+years in the industry,I  started my buisness..etc 
-           </td>
-    <tr>
-    </body>
+  <style>
+    body {
+      background-color: yellow;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card-title {
+      color: darkblue;
+      font-weight: bold;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .card-img-top {
+      object-fit: cover;
+      height: 180px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <h1 class="text-center text-danger mb-4 fw-bold bg-warning p-2 rounded">DIRECTORS</h1>
+
+    <div class="row g-4">
+
+      <!-- Managing Director -->
+      <div class="col-md-4">
+        <div class="card h-100 border border-dark bg-info">
+          <img src="images/director1.jpg" class="card-img-top" alt="Managing Director">
+          <div class="card-body">
+            <h5 class="card-title text-center">MANAGING DIRECTOR</h5>
+            <p class="card-text">
+              Hello, I am <strong>Steven Udandi</strong>, the Managing Director of Steven Cycle Traders. I am a BSc-IT graduate from Mumbai University. With 10+ years of industry experience, I joined the family business in 2023. Since then, we’ve expanded with multiple branches and grown steadily.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Director -->
+      <div class="col-md-4">
+        <div class="card h-100 border border-dark bg-light">
+          <img src="images/director2.jpg" class="card-img-top" alt="Technical Director">
+          <div class="card-body">
+            <h5 class="card-title text-center">TECHNICAL DIRECTOR</h5>
+            <p class="card-text">
+              Hello, I am <strong>Vikas K.</strong>, the Technical Director at Steven Cycle Traders. A BSc-IT graduate, I bring over 7 years of industry experience and have worked with various tech companies before joining this dynamic venture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finance Director -->
+      <div class="col-md-4">
+        <div class="card h-100 border border-dark bg-warning-subtle">
+          <img src="images/director3.jpg" class="card-img-top" alt="Finance Director">
+          <div class="card-body">
+            <h5 class="card-title text-center">FINANCE DIRECTOR</h5>
+            <p class="card-text">
+              Hello, I am <strong>Manish P.</strong>, the Finance Director of Steven Cycle Traders. I hold a BSc-CS degree and have over 5 years of experience in finance. I began my journey in business with a vision to bring financial stability and growth to our organization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
