@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MY WEBSITE</title>
 
   <!-- Bootstrap 5 CDN -->
@@ -36,19 +38,46 @@
       border: 3px dotted white;
     }
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+   img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
     #btn:hover {
       background: orange;
       cursor: pointer;
     }
 
-    nav {
-      background-color: aquamarine;
-    }
+   nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #aaf0d1;
+}
+
+nav a {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+}
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
 
     h5 {
       background-color: blue;
@@ -56,6 +85,34 @@
       color: gold;
       font-style: oblique;
     }
+    form {
+  max-width: 90%;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ff0000, #006400, #000000);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+button, input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
   </style>
 </head>
 
