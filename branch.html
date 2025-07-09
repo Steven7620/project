@@ -18,20 +18,29 @@
     p {
       color: brown;
     }
-    .carousel-container, .slider, .banner, .carousel-inner {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  overflow: hidden;
+    .carousel-caption h5 {
+  font-size: 1.5rem;
 }
 
-.carousel img, .slider img, .banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* ensures it fills area without stretching */
+.carousel-caption p {
+  font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 10%;
+    padding: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
 
   </style>
 </head>
@@ -60,7 +69,8 @@
 
         <div class="carousel-item active">
           <img src="images/11.jpg" class="d-block w-100" alt="Mira Road Branch">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+         <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded p-3">
+
             <h5>MIRA ROAD</h5>
             <p>Shop no.3, Shanti Shopping Centre, near Railway Station, Mira Road.</p>
           </div>
@@ -68,7 +78,8 @@
 
         <div class="carousel-item">
           <img src="images/2.jpg" class="d-block w-100" alt="Vasai Branch">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+         <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded p-3">
+
             <h5>VASAI</h5>
             <p>Shop no.1, Tungareshwar Sweets, near Railway Station, Vasai West.</p>
           </div>
@@ -76,7 +87,8 @@
 
         <div class="carousel-item">
           <img src="images/3.jpg" class="d-block w-100" alt="Andheri Branch">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+         <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded p-3">
+
             <h5>ANDHERI</h5>
             <p>Shop no.4, Moksh Plaza, near Railway Station, Andheri West.</p>
           </div>
