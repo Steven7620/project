@@ -18,6 +18,21 @@
     p {
       color: brown;
     }
+    .carousel-container, .slider, .banner, .carousel-inner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carousel img, .slider img, .banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* ensures it fills area without stretching */
+}
+
   </style>
 </head>
 
