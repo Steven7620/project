@@ -50,19 +50,27 @@
       cursor: pointer;
     }
 
-   nav {
+ nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  overflow-x: auto; 
+  white-space: nowrap; 
   background-color: #aaf0d1;
+  padding: 10px 0;
 }
 
 nav a {
-  flex: 1 1 auto;
-  text-align: center;
-  padding: 10px;
-  font-size: 1em;
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
+
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   nav a {
     font-size: 0.9em;
